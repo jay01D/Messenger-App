@@ -2,6 +2,7 @@
 @config "../tailwind.config.ts";
 
 html,
-body:root {
+body,
+:root {
   height: 100%;
 }
