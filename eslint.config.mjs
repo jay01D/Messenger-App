@@ -14,6 +14,9 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
   {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+    },
     settings: {
       react: {
         version: "19.2.3",
