@@ -5,10 +5,12 @@ import { useRouter } from "next/navigation"
 import { format } from "date-fns"
 import { useSession } from "next-auth/react"
 import clsx from "clsx"
+import useOtherUser from "@/app/hooks/useOtherUser"
+import { FullConversationType } from "@/app/types"
 
 
 interface ConversationBoxProps {
-    data: Conversation
+    data: FullConversationType
     selected?: boolean
 }
 
@@ -16,6 +18,7 @@ export const ConversationBox = ({
     data,
     selected
 }: ConversationBoxProps) => {
+    const otherUser = useOtherUser(data);
     return (
         <div>ConversationBox</div>
     )
