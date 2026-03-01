@@ -1,4 +1,4 @@
-"usr client"
+"use client"
 
 import Avatar from "@/app/components/Avatar"
 import { User } from "@prisma/client"

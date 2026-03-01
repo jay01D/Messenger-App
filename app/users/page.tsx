@@ -1,4 +1,4 @@
-import EmptyState from "../(site)/EmptyState"
+import EmptyState from "../components/EmptyState"
 
 
 const Users = () => {
